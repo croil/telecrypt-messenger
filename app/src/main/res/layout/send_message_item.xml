@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:onClick="openMyImage"
+    tools:context=".ChannelActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/item_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/send_message_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_max="wrap"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintWidth_percent="0.7">
+
+
+        <TextView
+            android:id="@+id/sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.01"
+            android:paddingStart="15dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <ImageView
+            android:id="@+id/send_image_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/receive_message"
+            app:layout_constraintWidth_max="wrap"
+            app:layout_constraintWidth_percent="0.6"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/sender_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="30dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

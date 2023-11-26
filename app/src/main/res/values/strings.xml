@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TeleCrypt</string>
+    <string name="create_session">CREATE NEW SESSION</string>
+    <string name="delete_session">Delete Session</string>
+    <string name="session_deleted">All sessions have been deleted</string>
+    <string name="permission_denied">Permission denied...</string>
+    <string name="login_add">Login</string>
+    <string name="name_add">Name</string>
+    <string name="back_add">Back</string>
+    <string name="add_contact">Add contact</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+</resources>
